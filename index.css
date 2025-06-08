@@ -6,3 +6,10 @@ main {
   width: 70vw;
   margin: 0 auto;
 }
+
+#about > img:first-of-type,
+#previous-work > p:first-of-type,
+#projects > div:first-of-type,
+#contact > form:first-of-type {
+  margin-top: 40px;
+}
