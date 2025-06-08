@@ -1,8 +1,8 @@
+main > h1:first-child {
+  margin-top: 70px;
+}
+
 main {
   width: 70vw;
   margin: 0 auto;
-}
-
-.navbar-brand {
-  margin: 0;
 }
