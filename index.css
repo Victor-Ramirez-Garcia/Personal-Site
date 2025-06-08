@@ -1,6 +1,13 @@
-main > h1:first-child {
-  margin-top: 70px;
+@media (min-width: 0px) {
+  main > h1:first-child {
+    margin-top: 110px;
+  }
 }
+
+@media (min-width: 302px) {
+  main > h1:first-child {
+    margin-top: 70px;
+  }
 
 main {
   width: 70vw;
