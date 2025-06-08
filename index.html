@@ -12,7 +12,6 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
-    <script defer src="index.js"></script>
     <!-- bootstrap.js file -->
     <script
       defer
@@ -20,6 +19,12 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+    <!-- jQuery 3.5.1 -->
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script defer src="index.js"></script>
   </head>
   <body class="bg-body-secondary">
     <header>
@@ -120,6 +125,90 @@
       </section>
       <section id="contact">
         <h2>Contact</h2>
+        <form
+          id="contact-form"
+          class="bg-dark-subtle rounded-1 border border-1 border-secondary m-auto mt-3 mb-5 p-3"
+        >
+          <h3 class="text-center">Reach Out To Me!</h3>
+          <p class="text-center">Fill out the fields below</p>
+          <div class="mb-3">
+            <label for="name" class="form-label mb-0 fs-5">Name</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label mb-0 fs-5">Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label mb-0 fs-5">Date</label>
+            <input type="date" class="form-control" id="date" required />
+          </div>
+          <fieldset>
+            <legend class="fs-5">Preferred Pronouns</legend>
+            <div class="d-inline-block mx-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="pronouns"
+                id="she-her"
+                value="she/her"
+              />
+              <label for="she-her">She/her</label>
+            </div>
+            <div class="d-inline-block mx-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="pronouns"
+                id="he-him"
+                value="he/him"
+              />
+              <label for="he-him">He/him</label>
+            </div>
+            <div class="d-inline-block mx-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="pronouns"
+                id="they-them"
+                value="they/them"
+              />
+              <label for="they-them">They/them</label>
+            </div>
+            <div class="d-inline-block mx-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="pronouns"
+                id="no-answer"
+                value="I prefer not to say"
+                checked
+              />
+              <label for="no-answer">I prefer not to say</label>
+            </div>
+          </fieldset>
+          <div class="mt-3">
+            <div class="row g-2">
+              <div class="col-12 col-sm-6">
+                <input
+                  type="submit"
+                  class="btn btn-secondary w-100"
+                  value="Submit"
+                />
+              </div>
+              <div class="col-12 col-sm-6">
+                <input type="reset" class="btn btn-light w-100" value="Reset" />
+              </div>
+            </div>
+          </div>
+          <div id="form-submission">
+            <p id="submit-header"></p>
+            <p id="submit-name"></p>
+            <p id="submit-email"></p>
+            <p id="submit-date"></p>
+            <p id="submit-pronouns"></p>
+          </div>
+        </form>
       </section>
     </main>
   </body>
